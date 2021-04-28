@@ -10,7 +10,12 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
+/**
+ * This class is used to enable Swagger2
+ * and configure info of the api documentation 
+ * @author mohdansa
+ *
+ */
 @EnableSwagger2
 @Configuration
 public class SwaggerConfiguration {
