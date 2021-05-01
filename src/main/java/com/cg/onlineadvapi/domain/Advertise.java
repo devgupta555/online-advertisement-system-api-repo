@@ -63,6 +63,19 @@ public class Advertise {
 	
 	
 	
+	public Advertise(Integer advertiseId, @NotBlank(message = "Title is required") String advertiseTitle,
+			@NotBlank(message = "Category is required") @Pattern(regexp = "[a-zA-Z_.]*", message = "Category cannot contain special characters or number") String category,
+			@NotNull(message = "It cannot be empty") @DecimalMin(value = "1.0", inclusive = false, message = "Product Price should be greater than or equal to 1") Double price,
+			String description, String status) {
+		super();
+		this.advertiseId = advertiseId;
+		this.advertiseTitle = advertiseTitle;
+		this.category = category;
+		this.price = price;
+		this.description = description;
+		this.status = status;
+	}
+
 	public Advertise() {
 		super();
 	}
